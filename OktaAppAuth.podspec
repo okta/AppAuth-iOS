@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "OktaAppAuth"
-  s.version      = "1.0.0.beta-okta"
+  s.version      = "1.1.0.beta-okta"
   s.summary      = "AppAuth for iOS and macOS is a client SDK for communicating with OAuth 2.0 and OpenID Connect providers."
 
   s.description  = <<-DESC
@@ -45,7 +45,7 @@ It follows the OAuth 2.0 for Native Apps best current practice
   s.subspec 'ExternalUserAgent' do |externalUserAgent|
 
     externalUserAgent.source_files = "Source/*.{h,m}"
-    
+
     # iOS
     externalUserAgent.ios.source_files      = "Source/iOS/**/*.{h,m}"
     externalUserAgent.ios.deployment_target = "7.0"
@@ -53,6 +53,6 @@ It follows the OAuth 2.0 for Native Apps best current practice
 
     # macOS
     externalUserAgent.osx.source_files = "Source/macOS/**/*.{h,m}"
-    externalUserAgent.osx.deployment_target = '10.9'    
+    externalUserAgent.osx.deployment_target = '10.9'
   end
 end
